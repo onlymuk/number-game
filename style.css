@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'DynaPuff';
+    src: url('DynaPuff-VariableFont_wdth,wght.ttf') format('truetype-variations');
+    font-weight: 400 900;
+    font-style: normal;
+    font-named-instance: 'Regular';
+  }
+ 
+  *{
+    font-family: 'DynaPuff', sans-serif;
+    font-variation-settings: 'wdth' 500, 'wght' 800;
+  }
+body {
+    font-family: 'DynaPuff', sans-serif;
+    font-variation-settings: 'wdth' 500, 'wght' 800;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://mblogthumb-phinf.pstatic.net/MjAxNzAxMDVfNTgg/MDAxNDgzNjA5MTM5Nzgw.X5tiFm5P7Io0jZCrgbFoU35WUR1DrP1vNq97MB5iqC8g.ERvmtYVNbQEBgjbgbV-xjSLEMkcy5wPVNsyGvq1Qx6sg.JPEG.6116949/737385.jpg?type=w2');
+    }
+
+    .container {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .game{
+        width: 70%;
+        height: 70%;
+        border: 1px solid #dedede;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .game h1 {
+        color: wheat;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 1000;
+        font-size: 80px;
+        white-space: nowrap;
+    }
+
+    .game p{
+        color: whitesmoke;
+        margin: 0;
+        font-size: 32px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-area{
+        margin-top: -10px;
+    }
+
+    .game-area{
+        max-width: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .game-description{
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 20px;
+        color: plum;
+
+    }
+
+    #result-area{
+        margin: 2px;
+        font-size: 20px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+    #chance-area{
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0 2px 2px 2px;
+        white-space: nowrap;
+    }
+    .game-start{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #user-input{
+        width: 300px;
+        height: 30px;
+        margin-right: 8px;
+        background-color: none;
+    }
+    #user-input::placeholder{
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        
+    }
+
+    .button-area button{
+        margin-left: 8px; 
+        height: 30px;
+    }
+
+    #play-button, #reset-button{
+        outline: none;
+        border: none;
+        background-color: rgba(255, 255, 255);
+        opacity: 0.7;
+        font-weight: 300;
+        color: black;
+        max-width: 200px;
+        border-radius: 40%;
+    }
+
+    #play-button{
+        background-color: skyblue;
+        color: navy;
+    }
+
+    #reset-button{
+        background-color: pink;
+        color: purple;
+    }
+    #play-button:hover, #reset-button:hover{
+        opacity: 2;
+        font-weight: 600;
+    }
+
+    @media screen and (max-width: 48rem) {
+        .game h1 {
+          font-size: 12vw;
+        }
+        .game p {
+          font-size: 10vw;
+        }
+        .sub-title {
+          font-size: 11vw;
+        }
+        .form-control {
+          font-size: 8vw;
+          max-width: 500px;
+          margin-right: 0px;
+        }
+    }
